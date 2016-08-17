@@ -13,8 +13,7 @@ public class RoboContactLambda {
 		 if (pred.test(p)){
 		        roboCall(p);
 		      }
-		}
-			);
+		});
 	}
 
   public void emailContacts(List<Person> pl, Predicate<Person> pred){
