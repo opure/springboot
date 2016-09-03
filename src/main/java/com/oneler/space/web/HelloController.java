@@ -19,7 +19,21 @@ public class HelloController {
         System.out.println("fdsaf");
         return "dddsa！！";
     }
-
+    
+    @RequestMapping("/")
+    public String index1() {
+    	return "index1";
+    }
+    
+    @RequestMapping("/hello2")
+    public String index2() {
+    	return "index2";
+    }
+    
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
 
     @RequestMapping("/hello1")
     public String index(ModelMap map) {
@@ -27,6 +41,6 @@ public class HelloController {
         // 加入一个属性，用来在模板中读取
         map.addAttribute("host", "http://blog.didispace.com");
         // return模板文件的名称，对应src/main/resources/templates/index.html
-        return "index";
+        return "a";
     }
 }
